@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Widget = styled.div`
-  margin-top: 24px;
+  width: 80%;
+  margin: 34px auto 0 auto;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => {
@@ -20,7 +21,7 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.3;
   }
 `;
 
@@ -29,10 +30,53 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background: linear-gradient(
+    225deg,
+    ${({ theme }) => theme.colors.primary},
+    ${({ theme }) => theme.colors.secondary}
+  );
+  background-size: 400% 400%;
+  -webkit-animation: AninHeaderSantuario
+    ${({ theme }) => theme.animations.default};
+  -moz-animation: AninHeaderSantuario ${({ theme }) => theme.animations.default};
+  animation: AninHeaderSantuario ${({ theme }) => theme.animations.default};
 
   * {
     margin: 0;
+  }
+
+  @-webkit-keyframes AninHeaderSantuario {
+    0% {
+      background-position: 0% 99%;
+    }
+    50% {
+      background-position: 100% 2%;
+    }
+    100% {
+      background-position: 0% 99%;
+    }
+  }
+  @-moz-keyframes AninHeaderSantuario {
+    0% {
+      background-position: 0% 99%;
+    }
+    50% {
+      background-position: 100% 2%;
+    }
+    100% {
+      background-position: 0% 99%;
+    }
+  }
+  @keyframes AninHeaderSantuario {
+    0% {
+      background-position: 0% 99%;
+    }
+    50% {
+      background-position: 100% 2%;
+    }
+    100% {
+      background-position: 0% 99%;
+    }
   }
 `;
 

@@ -1,7 +1,7 @@
 {
   "bg": "https://i2.wp.com/cloud.estacaonerd.com/wp-content/uploads/2018/12/09144832/saint_seiya__last_moment__by_kekse0719-da2wlod.jpg?fit=2000%2C1125&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz dos Cavaleiros do Zodiaco",
+  "description": "Quanto você sabe sobre os Cavaleiros do Zodíaco, eleve seu sétimo sentido e faça seu teste agora.",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -24,12 +24,15 @@
   "external": [""],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#472348",
+      "secondary": "#19345a",
+      "mainBg": "rgb(0 0 0 / 88%)",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
+    },
+    "animations": {
+      "default": "2.5s ease infinite"
     },
     "borderRadius": "4px"
   }
